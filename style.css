@@ -13,7 +13,7 @@ section {
     width: 100%;
 }
 
-
+/* navigation */
 .navbar {
     width: 100%;
     display: flex;
@@ -24,7 +24,6 @@ section {
 .nav-logo {
     margin-left: 32px;
 }
-
 .nav-logo img {
     height: 32px;
 }
@@ -58,11 +57,10 @@ section {
 .hamburger-btn{
     display: block;
     font-size: 30px;
-    color: #555555;
+    color: #999999;
     cursor: pointer;
     margin: 32px;
 }
-
 #check {
     display: none;
 }
@@ -75,8 +73,9 @@ section {
     opacity: 1;
 }
 
-@media only screen and (min-width:429px) {
 
+
+@media only screen and (min-width:429px) {
     .navbar{
         height: 100px;
         background-color: transparent;
@@ -85,7 +84,6 @@ section {
     .nav-logo{
         margin-left: 80px;
     }
-
     .hamburger-btn{
         display: none;
     }
@@ -100,15 +98,14 @@ section {
         transition: none;
         margin-right: 25px;  
     }
-
     .nav-link li {
         display: inline-block;
         opacity: 1;
         line-height:100px ;
         margin: 0 20px;
-        transition: none;    
+        transition: none;
+        
     }
-
     .nav-link li a {
         font-size: 16px;
         color: black;
@@ -127,6 +124,8 @@ section {
 .color_pink{
         color: #FF3998;
     }
+
+
 
 #robo {
     position: absolute;
@@ -171,6 +170,11 @@ h1 {
     border-image:  linear-gradient(to left, #FF8139,#FF3998)1 10%;    
 }
 
+.sign-btn:hover {
+    box-shadow: 1px -1px 16px -1px rgba(237,111,111,0.72);
+                -webkit-box-shadow: 1px -1px 16px -1px rgba(237,111,111,0.72);
+                -moz-box-shadow: 1px -1px 16px -1px rgba(237,111,111,0.72);
+}
 
 @media only screen and (min-width:429px) {
 
@@ -268,7 +272,6 @@ h2 {
 }
 
 @media only screen and (min-width:429px) {
-
     #companies {
         display: flex;
         flex-wrap: nowrap;
@@ -346,6 +349,7 @@ h2 {
     padding-right: 25px;
     font-size: 22px;
 }
+
 .item-bid-price::before {
     content: url(/assets/eth.svg);
     display: flex;
@@ -365,6 +369,7 @@ h2 {
     text-align: right;
     padding-right: 25px;
 }
+
 @media only screen and (min-width:429px) {
 
     .text-block {
@@ -377,6 +382,7 @@ h2 {
         justify-content: space-between;
         margin-bottom: 100px;
     }
+
     .item {
         margin: 0;
     }
@@ -392,6 +398,7 @@ h2 {
 #lauching .text-block{
     width: 180px;
     letter-spacing: 1.5px;
+ 
 }
 
 #lauching .text-block .divider {
@@ -404,20 +411,23 @@ h2 {
 }
 
 /* kitaip kazkodel nesigavo */
+
 .launching-img img{
     height: 400px;
     position: absolute;
-    right: 0px;
+    right: -10px;
     top:1835px;  
 }
 
 @media only screen and (min-width:429px) {
+
     .launching-img img{
         height: 467px;
         position: absolute;
         right: 300px;
         top: 2158px;  
     }
+
     #lauching .divider:first-child {
         margin-bottom: 100px;
     }
@@ -429,7 +439,7 @@ h2 {
     #lauching .text-block{
         width: 100%;
     }
-    
+
     #lauching .text-block .divider {
         display: none;
     }
@@ -478,12 +488,16 @@ h2 {
     width: 60px;
 }
 
+.item:hover {
+    filter: grayscale(80%);
+}
+
 .not-see {
     display: none;
 }
 
 .link-container {
-    margin: 32px 0 32px 32px;
+    margin: 32px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
@@ -493,6 +507,7 @@ h2 {
     margin: 32px;
     font-size: 15px;
     color: #999999;
+    
 }
 
 .copyrights p:last-child {
@@ -517,6 +532,7 @@ h2 {
         align-items: center;
         margin-bottom: 50px;
     }
+
     .copyrights p:last-child {
         display: contents;
     }
@@ -526,7 +542,7 @@ h2 {
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .left-side {
         width: 40%;
     }
