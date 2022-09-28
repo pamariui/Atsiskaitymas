@@ -268,7 +268,7 @@ h2 {
 }
 
 @media only screen and (min-width:429px) {
-    
+
     #companies {
         display: flex;
         flex-wrap: nowrap;
@@ -359,12 +359,14 @@ h2 {
     text-align: left;
     padding-left: 25px;
 }
+
 .item-time_left {
     color: #999999;
     text-align: right;
     padding-right: 25px;
 }
 @media only screen and (min-width:429px) {
+
     .text-block {
         margin: 0;
         margin-bottom: 50px;
@@ -387,18 +389,16 @@ h2 {
     margin: auto;
 }
 
-
-
 #lauching .text-block{
     width: 180px;
     letter-spacing: 1.5px;
- 
 }
 
 #lauching .text-block .divider {
     margin-left: -32px;
     min-width: 428px;
 }
+
 #lauching button {
     margin-bottom: 50px;
 }
@@ -421,16 +421,20 @@ h2 {
     #lauching .divider:first-child {
         margin-bottom: 100px;
     }
+
     #lauching button {
         margin-bottom: 100px;
     }
+
     #lauching .text-block{
         width: 100%;
     }
+    
     #lauching .text-block .divider {
         display: none;
     }
 }
+
 .footer {
     margin: 32px;
 }
@@ -462,9 +466,11 @@ h2 {
     width: 100%;
     letter-spacing: 1px;
 }
+
 .links a:hover {
     color: #62c6df;
 }
+
 .link-item {
     width: 60px;
 }
@@ -484,7 +490,6 @@ h2 {
     margin: 32px;
     font-size: 15px;
     color: #999999;
-    
 }
 
 .copyrights p:last-child {
@@ -492,6 +497,7 @@ h2 {
 }
 
 @media only screen and (min-width:429px) {
+    
     .footer {
         margin: 80px;
     }
