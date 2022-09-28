@@ -24,6 +24,7 @@ section {
 .nav-logo {
     margin-left: 32px;
 }
+
 .nav-logo img {
     height: 32px;
 }
@@ -61,6 +62,7 @@ section {
     cursor: pointer;
     margin: 32px;
 }
+
 #check {
     display: none;
 }
@@ -73,9 +75,8 @@ section {
     opacity: 1;
 }
 
-
-
 @media only screen and (min-width:429px) {
+
     .navbar{
         height: 100px;
         background-color: transparent;
@@ -84,6 +85,7 @@ section {
     .nav-logo{
         margin-left: 80px;
     }
+
     .hamburger-btn{
         display: none;
     }
@@ -98,14 +100,15 @@ section {
         transition: none;
         margin-right: 25px;  
     }
+
     .nav-link li {
         display: inline-block;
         opacity: 1;
         line-height:100px ;
         margin: 0 20px;
-        transition: none;
-        
+        transition: none;    
     }
+
     .nav-link li a {
         font-size: 16px;
         color: black;
@@ -124,8 +127,6 @@ section {
 .color_pink{
         color: #FF3998;
     }
-
-
 
 #robo {
     position: absolute;
@@ -155,6 +156,7 @@ h1 {
     font-size: 50px;
     font-weight: 900;
 }
+
 .start_p {
     color: #555555;
 }
@@ -266,6 +268,7 @@ h2 {
 }
 
 @media only screen and (min-width:429px) {
+    
     #companies {
         display: flex;
         flex-wrap: nowrap;
