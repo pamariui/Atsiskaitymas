@@ -1,0 +1,523 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-left: 32px;
+}
+.nav-logo img {
+    height: 32px;
+}
+
+.nav-link {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    top: 75px;
+    background: #fff;
+    float: right;
+    text-align: center;
+    z-index: 3;
+}
+
+.nav-link li {
+    list-style: none;
+    opacity: 0;
+    line-height: 30px;
+    margin: 50px 0;
+    transition:  all 1s;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.hamburger-btn{
+    display: block;
+    font-size: 30px;
+    color: #555555;
+    cursor: pointer;
+    margin: 32px;
+}
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-link {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-link li{
+    opacity: 1;
+}
+
+
+
+@media only screen and (min-width:429px) {
+    .navbar{
+        height: 100px;
+        background-color: transparent;
+    }
+
+    .nav-logo{
+        margin-left: 80px;
+    }
+    .hamburger-btn{
+        display: none;
+    }
+
+    .nav-link{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        float: right;
+        text-align: right;
+        transition: none;
+        margin-right: 25px;  
+    }
+    .nav-link li {
+        display: inline-block;
+        opacity: 1;
+        line-height:100px ;
+        margin: 0 20px;
+        transition: none;
+        
+    }
+    .nav-link li a {
+        font-size: 16px;
+        color: black;
+    }
+
+    .nav-link li a:hover {
+        color:#62c6df;
+    }
+
+    .nav-link li a span:hover {
+        color: #62c6df;
+    }
+
+}
+
+.color_pink{
+        color: #FF3998;
+    }
+
+
+
+#robo {
+    position: absolute;
+    background-image: url(/assets/graphic.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top -30px right -170px;
+    position: relative;
+}
+
+.text-block {
+    margin: 0 32px;
+    width: 274px;
+    text-align: justify;
+}
+
+
+h4 {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #FF3998;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+}
+.start_p {
+    color: #555555;
+}
+
+.sign-btn {
+    margin-top: 10px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #fff;
+    border-style:solid;
+    border-width: 3px;
+    border-image:  linear-gradient(to left, #FF8139,#FF3998)1 10%;    
+}
+
+
+@media only screen and (min-width:429px) {
+
+    main {
+        margin: 80px;
+    }
+
+    #robo {
+        padding: 100px 0;
+        background-position: right 50%;
+        background-size: 750px;
+    }
+
+    .text-block {
+        width: 620px;
+        text-align: justify;
+    }
+    .start-page {
+        max-width: 100%;
+        
+    }
+    h1 {
+        font-size: 75px;
+        letter-spacing: 5px;
+    }
+    .start_p {
+        color: #555555;
+        letter-spacing: 2px;
+        width: 80%;
+    }
+        
+
+}
+
+ #colorfull {
+    margin:0;
+    margin-top: 150px;
+    position: relative;
+    z-index: -1;
+    height: 300px;
+    width: 100%;
+    background-image: url(/assets/background.svg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#colorfull .text-block {
+    margin: 0 32px 0 32px;  
+    width: 100%;
+}
+
+#colorfull .text-block p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width:429px) {
+
+    #colorfull {
+        width: 100%;
+        background-size:fill;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        border-radius: 15px;
+    }
+}
+
+#companies {
+    margin: 50px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    
+}
+
+#companies img {
+    height: 30px;
+}
+
+#companies a:hover {
+ filter:invert(100%);
+}
+
+.opendoor {
+    display: none;
+}
+
+@media only screen and (min-width:429px) {
+    #companies {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 100px 0px;
+    }
+
+    .opendoor {
+        display:contents;
+    }
+
+}
+
+.auction-p a {
+    color: black;
+}
+
+.auction-p a:hover {
+    color:#62c6df;
+    margin-bottom: 100px;
+}
+.auction-items {
+    height: 400px;
+    margin-left: 32px;
+    display: flex;
+    overflow-y: hidden;
+    margin-bottom: 100px;
+}
+
+.item {
+    
+    width: 290px;
+    margin-right: 30px;
+}
+
+.item-picture {
+    height: 278px;
+}
+
+.item-description {
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 40px 40px;
+    background-color: #EEEEEE;
+    border-radius:0 0 15px 15px;
+    align-items: center;
+    
+}
+
+.item-series {
+    text-transform: uppercase;
+    color: #FF8139;
+    font-size: 14px;
+    padding-left: 25px;
+}
+
+.item-top-bid {
+    text-align: right;
+    padding-right: 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.item-name {
+    font-weight: 600;
+    padding-left: 25px;
+    font-size: 22px;
+}
+
+.item-bid-price {
+    display: flex;
+    font-weight: 600;
+    justify-content: flex-end;
+    padding-right: 25px;
+    font-size: 22px;
+}
+.item-bid-price::before {
+    content: url(/assets/eth.svg);
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.item-id_number{
+    color: #777777;
+    text-align: left;
+    padding-left: 25px;
+}
+.item-time_left {
+    color: #999999;
+    text-align: right;
+    padding-right: 25px;
+}
+@media only screen and (min-width:429px) {
+    .text-block {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    
+    .auction-items {
+        margin:0;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .item {
+        margin: 0;
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background: #EEEEEE;
+    margin: auto;
+}
+
+
+
+#lauching .text-block{
+    width: 180px;
+    letter-spacing: 1.5px;
+ 
+}
+
+#lauching .text-block .divider {
+    margin-left: -32px;
+    min-width: 428px;
+}
+#lauching button {
+    margin-bottom: 50px;
+}
+
+/* kitaip kazkodel nesigavo */
+.launching-img img{
+    height: 400px;
+    position: absolute;
+    right: -20px;
+    top:1835px;  
+}
+
+@media only screen and (min-width:429px) {
+    .launching-img img{
+        height: 467px;
+        position: absolute;
+        right: 300px;
+        top: 2158px;  
+    }
+    #lauching .divider:first-child {
+        margin-bottom: 100px;
+    }
+    #lauching button {
+        margin-bottom: 100px;
+    }
+    #lauching .text-block{
+        width: 100%;
+    }
+    #lauching .text-block .divider {
+        display: none;
+    }
+}
+.footer {
+    margin: 32px;
+}
+
+.media-icons a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #999999;
+    padding-right: 10px;
+}
+.media-icons a:hover {
+    color: #62c6df;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+.link-title {
+    color: #555555;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.links a {
+    text-decoration: none;
+    padding:5px 0;
+    color: #555555;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.links a:hover {
+    color: #62c6df;
+}
+.link-item {
+    width: 60px;
+}
+
+.not-see {
+    display: none;
+}
+
+.link-container {
+    margin: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.copyrights {
+    margin: 32px;
+    font-size: 15px;
+    color: #999999;
+    
+}
+
+.copyrights p:last-child {
+    display: none;
+}
+
+@media only screen and (min-width:429px) {
+    .footer {
+        margin: 80px;
+    }
+
+    .link-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .copyrights {
+        margin: 0 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .copyrights p:last-child {
+        display: contents;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left-side {
+        width: 40%;
+    }
+    .right-side {
+        width: 40%;
+    }
+}
